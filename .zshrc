@@ -87,8 +87,8 @@ alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gcan='git commit --amend --no-edit'
 alias gcam='git commit --amend -m'
-alias ggr="git log --graph --pretty=format:'%C(yellow)%cd %C(cyan)%h %C(bold blue)%an %Creset%s %C(red)%d' --abbrev-commit --date=short"
-alias ggra="ggr --all"
+alias gl="git log --graph --pretty=format:'%C(yellow)%cd %C(cyan)%h %C(bold blue)%an %Creset%s %C(red)%d' --abbrev-commit --date=short"
+alias gla="ggr --all"
 alias gls="git ls-remote"
 alias gbdm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
 function gc() {
