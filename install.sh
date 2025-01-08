@@ -5,5 +5,8 @@
 
 DIR=$(dirname $0)
 
+apt-get update
+apt-get install less -y
+
 cp -R "$DIR"/.zshrc .zsh.d ~
 source "$DIR"/.zshrc
