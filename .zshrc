@@ -92,8 +92,7 @@ alias gla="ggr --all"
 alias gls="git ls-remote"
 alias gbdm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
 function gc() {
-  branch=`echo $vcs_info_msg_0_ | sed -E 's/^.*\[%F{cyan}(.+)%F{white}\].*$/\1/'`
-  git commit -m "$branch $@"
+  git commit -m --allow-empty "$@"
 }
 function gri() {
   git rebase -i @~$1
