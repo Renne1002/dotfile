@@ -175,7 +175,7 @@ setopt nobeep
 export LESS='-R'
 
 # direnv
-export EDITOR="code"
+export EDITOR="code --wait"
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 # rbenv
