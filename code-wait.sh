@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-code --wait "$@"
+code -rw "$@"
