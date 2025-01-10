@@ -8,6 +8,7 @@ DIR=$(dirname $0)
 apt-get update
 apt-get install less -y
 
+rm -rf ~/.zshrc ~/.zsh.d
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.zsh.d ~/.zsh.d
 source ~/.zshrc
